@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+
+  <head>
+    <title>Appointment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+      body{
+        background-color: #b3f4ff;
+        background-size: cover;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="top">
+  		<div>
+  		 Contact Us +91 0123456789 / 9876543210 | hopewell@hospital.com
+  		</div>
+  	</div>
+
+  	<div class="logo">
+  		<div>
+  			<table>
+  				<tr>
+            <td style="padding-left:5px;">
+  						<img src="imgs\plus.JPG" width="80px" height="80px">
+  						&nbsp;&nbsp;&nbsp;&nbsp;
+  					</td>
+  					<td width="600px" style="font-size:40px;font-family:forte;">
+  						<font color="#FF0000"> HOPEWELL  </font>
+  						<font color="#000" style="font-size:25px; font-family:TimesNewRoman"><em> &nbsp; Hospital <br> By &nbsp; SHALBY </em></font> </td>
+  					<td> <br> <br>
+  						<font size="3px">
+  							<a href="index.html">HOME</a>
+  							<a href="about.html">ABOUT US</a>
+  							<a href="service.html">SERVICE</a>
+  							<a href="doctor.html">DOCTORS</a>
+  							<a href="contact.html">CONTACT US</a>
+  						</font>
+  					</td>
+  				</tr>
+  			</table>
+  		</div>
+  	</div>
+    <br>
+
+    <! Form declaration >
+    <form name="Appointment" onsubmit="return myFunction()" action="index.html" autocomplete="on" class="was-validated">
+    <table border="10" width=70% cellspacing="10" cellpadding="5" align="center">
+      <tr>
+        <font size="6px">
+        <p font-size="6px" align="center"><strong>Appointment Booking Form </strong></p>
+      </font>
+      </tr>
+      <tr>
+        <td><strong>First name</strong></td>
+        <td><input type="text" name="fname" class="form-control" id="fname" placeholder="Enter name here" required></td>
+      </tr>
+
+      <tr>
+        <td><strong>Last name</strong></td>
+        <td><input type="text" name="lname" class="form-control" id="lname" placeholder="Enter surname here" required></td>
+      </tr>
+
+      <tr>
+        <td><strong>Mobile no.</strong></td>
+        <td><input type="text" name="mobile.no" class="form-control" id="mob" placeholder="Enter your phone no. here" required></td>
+      </tr>
+
+      <tr>
+        <td><strong>Gender</strong></td>
+        <td>
+          <select name="sex">
+            <option value="MA">Male &nbsp;</option>
+            <option value="FE">Female &nbsp;</option>
+            <option value="OT">Other</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Book an appointment</strong></td>
+        <td>
+          <input type="checkbox" name="ft"/>&nbsp;Dental Care &nbsp;
+          <input type="checkbox" name="pt"/>&nbsp;Otology &nbsp;
+          <input type="checkbox" name="pt"/>&nbsp;Otology &nbsp;
+          <input type="checkbox" name="ct"/>&nbsp;Cardiac &nbsp;
+          <input type="checkbox" name="ct"/>&nbsp;Hepatology &nbsp;
+          <input type="checkbox" name="ct"/>&nbsp;Orthopedics &nbsp;
+          <input type="checkbox" name="ct"/>&nbsp;Mental Health
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Patient type :</strong></td>
+        <td>
+          <input type="radio" name="estatus" id="rad1" value="new" required/>New
+          <input type="radio" name="estatus"  id="rad2" value="existing" required/>Exsisting
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="email"><strong>Email </strong></label>
+        </td>
+        <td>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" width="40%" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="pwd"><strong>Enter password </strong></label>
+        </td>
+        <td>
+          <input type="password" class="form-control" id="pwd1" placeholder="Enter password" name="pswd" width="40%" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="pwd"><strong>Confirm password</strong></label>
+        </td>
+        <td>
+          <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" name="pswd" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Choose booking date</strong></td>
+        <td>
+          <input type="text" class="form-control" id="my_date_picker" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><strong>Additional Content</strong></td>
+        <td>
+          <textarea name="contents" cols="20" rows="4" class="form-control"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="submit" name="submit" value="Submit" class="sub"/>
+          <input type="reset" name="reset" value="Reset" class="res"/>
+        </td>
+      </tr>
+
+      <tr></tr>
+      <br><br>
+    </table>
+  </form>
+        <br><br>
+
+  <div class="nav_down">
+		<div>
+		 &copy; HOPEWELL Hospital, site designed & develope by RRM
+		</div>
+	</div>
+
+</body>
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+
+  <script src= "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+
+    <!Datepicker UI>
+  <script>
+  $(document).ready(function() {
+
+          $(function() {
+              $( "#my_date_picker" ).datepicker();
+          });
+      });
+  </script>
+
+    <!Form validation>
+  <script>
+    /*var btn1 = document.querySelector(".sub");
+    btn1.style.background = 'lime';
+    var btn2 = document.querySelector(".res");
+    btn2.style.background = 'pink';
+    Form validation using bootstrap class="was-validated" and required method*/
+
+
+
+    function myFunction(){
+      var fn = document.getElementById("fname");
+      var ln = document.getElementById("lname");
+      var phno = document.getElementById("mob");
+      var psw1 = document.getElementById("pwd1");
+      var psw2 = document.getElementById("pwd2");
+      var r1 = document.getElementById("rad1");
+      varr2 = document.getElementById("rad2");
+      if(fn.value.trim() == "" || ln.value.trim() == "" || phno.value.trim() == "" || psw1.value.trim() == "" || (phno.value).length < 10 || (phno.value).length > 10)
+      {
+        window.alert("Field left blank or invalid phone number please check !!");
+        return  false;
+      }
+      else if(psw1.value !== psw2.value){
+        window.alert("Please check the password ");
+        return  false;
+      }
+      else if(r1.isSelected() && r2.isSelected()){
+        window.alert("Please select type of patient");
+        return false ;
+      }
+      else {
+          //var name = fn.value + " your appointment is booked" ;
+          //alert(name);
+          window.alert("Appointment is booked ");
+          return true;
+      }
+    }
+  </script>
+</html>

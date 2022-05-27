@@ -1,0 +1,153 @@
+<html>
+<head>
+	<title> UK Hospital </title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width = device-width , initial-scale = 1"/>
+ 	<link href="style.css" type="text/css" rel="stylesheet">
+
+	 <style>
+	 body{
+		 background-color: #e0ffff;
+		 background-size: cover;
+	 }
+
+	 .mySlides {display:none;}
+	 </style>
+
+</head>
+<body>
+
+	<div class="top">
+		<div>
+		 Contact Us +91 0123456789 / 9876543210 | hopewell@hospital.com
+		</div>
+	</div>
+
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td style="padding-left:5px;">
+						<img src="imgs\plus.JPG" width="80px" height="80px">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+					<td width="600px" style="font-size:40px;font-family:forte;">
+						<font color="#FF0000"> HOPEWELL  </font>
+						<font color="#000" style="font-size:25px; font-family:TimesNewRoman"><em> &nbsp; Hospital <br> By &nbsp; SHALBY </em></font> </td>
+					<td> <br> <br>
+						<font size="4px">
+							<a href="index.html">HOME</a>
+							<a href="about.html">ABOUT US</a>
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a>
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000"> Welcome to <mark>HOPEWELL Hospital</mark> </font> <br> <br>
+
+					<font color="#000" size="6px"> Best Medical & Health care Needs to Our Patients </font> <br> <br>
+
+The dedicated teams of doctors and nurses delivers the message of hope to their patients in gadag hospital. All over the world, hospitals are built to treat and cure thousands of the sick patients.  there are very well-equipped facilities and expert doctors. This gadag hospitals is considered the best places for effective treatment.<br><br>
+
+Where healing comes from heart<br><br>
+
+<br>
+ </td>
+
+
+					<td style="padding-left:20px;">
+						<img class="mySlides" src="imgs\a.jpeg" style="width:400px" height="400px">
+					  <img class="mySlides" src="imgs\01.jpeg" style="width:400px" height="400px">
+					  <img class="mySlides" src="imgs\no.1.jpeg" style="width:400px" height="400px">
+						<img class="mySlides" src="imgs\manydoctors.JPG" style="width:400px" height="400px">
+						<img class="mySlides" src="imgs\doctors.JPG" style="width:400px" height="400px">
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+
+<br><br><br><br>
+
+<table border="0">
+	<tr>
+		<td></td>
+		<td>
+			<video width="800" controls>
+		    <source src="imgs\video.mp4" type="video/mp4">
+		  </video>
+		</td>
+		<td></td>
+	</table>
+
+	<br><br>
+
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000" size="6px">Address : </font> <br>
+
+					<font color="#000" size="6px"> Hopewell Hospital</font> <br>
+
+Vidyanagar, 1st cross,<br>
+behind Maharaja Palace <br>Dist : Mysuru <br> Contact No - 0123456789 <br> Email: hopewellg@hospital.com<br><br>
+
+
+<br>
+ </td>
+
+
+					<td style="padding-left:20px;"> </td>
+				</tr>
+
+
+			</table>
+		</div>
+	</div>
+
+
+	<div class="nav_down">
+		<div>
+		 &copy; HOPEWELL Hospital, site designed & develope by RRM
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script>
+	//Slide Show effect
+		var myIndex = 0;
+		slide();
+
+		function slide() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			setTimeout(slide, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+</body>
+</html>
